@@ -1,0 +1,370 @@
+@font-face{
+    font-family: "KoHo";
+    src: url("../fonts/Quicksand-Medium.ttf");
+}
+body{
+    font-family: 'KoHo';
+}
+.header{
+    background-color:rgba(255, 255, 255, 0.4);
+    z-index: 100;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    
+}
+
+.login{
+    position: relative;
+    top: 20px;
+    left: 70%;
+    width:260px;
+    
+}
+#submitLogin{
+    border-radius:0; 
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border:2px solid #ecf0f1;
+
+
+
+}
+.form{
+    height:155px;
+    width: 260px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    padding-left: 15px;
+
+}
+
+.Intro{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/TninOurika.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+}
+.shortTitle{
+    display: none;
+    width:100%;
+    height: 100%;
+}
+.longTitle{
+    display: none;
+}/*
+.title:hover .shortTitle{
+    filter: blur(2px);
+}
+
+.title:hover .longTitle{
+    display: inline;
+}*/
+.title
+{
+    margin-top: 15px;
+    font-size: 60px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:25px;
+    left: 500px;
+}
+
+li {
+    float: left;
+}
+li a:visited{
+    color: #34495e;
+    text-decoration: none;
+}
+li a:link{
+    color: #34495e;
+    text-decoration: none;
+}
+li a {
+    display: block;
+    color: #34495e;
+    text-align: center;
+    font-family: 'KoHo';
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #2c3e50;
+    font-size: 115%;
+    border-bottom: 2px solid #2c3e50;
+}
+
+.Intro h1{
+    position: relative;
+    width: 879px;
+    top: 40%;
+    left: 145px;
+    font-size: 100px;
+    color: WHITE;
+    text-transform: uppercase;
+    background-color:rgba(255, 255, 255, 0.4); 
+}
+.Intro h4{
+    position: relative;
+    width: 253px;
+    top: 40%;
+    left: 145px;
+    font-size: 20px;
+    color: WHITE;
+    text-transform: uppercase;
+    background-color:rgba(255, 255, 255, 0.4); 
+}
+#AboutME{
+    position: relative;
+    widows: 100%;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+
+#AboutME h4{
+    position: relative;
+    width: 100%;
+    top: 30%;
+    text-align: center;
+    font-size: 20px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+}
+
+#AboutME img{
+    position: absolute;
+    z-index: 0;
+    top: 180px;
+    left: 250px;
+    width: 364px;
+    height:364px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    object-fit: cover;
+}
+#AboutME p{
+    position: relative;
+    top: 30%;
+    left: 672px;
+    width: 500px;
+    text-align: justify;
+    color: #343a40;
+
+}
+#Gallerie{
+    position: relative;
+    widows: 100%;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+
+#Gallerie h4{
+    position: relative;
+    width: 100%;
+    top: 18%;
+    text-align: center;
+    font-size: 40px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+
+}
+
+#Gallerie .imgs{
+    position: absolute;
+    top:30%;
+    left: 50px;
+    
+}
+
+.imgs div{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+#Gallerie img{
+    margin-right:-5px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    background-position: center left;
+}
+
+
+.container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: -162px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+    background-color:rgba(0, 0, 0, 0.4);
+    width: 350px;
+    height: 350px;
+  }
+  
+  .text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  #photoinfo {
+    display: none;
+    position: relative;
+    z-index: 101;
+    top: -8vh;
+    left: 0;
+    widows: 100%;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+button:focus{
+    display: none;
+}
+#photoinfo button{
+    position: absolute;
+    z-index: 1;
+    top:7vh;
+    left: 185vh;
+    width: 29px;
+    height: 25px;
+    border: 0;
+    font-size: 40px;
+    
+}
+
+
+#photoinfo img{
+    position: relative;
+    z-index: 0;
+    top:12vh;
+    left: 35vh;
+    width: 150vh;
+    height: 80vh;
+    object-fit: cover;
+    border-bottom: 5px solid #ecf0f1;
+}
+#MonCV{
+    position: relative;
+    widows: 100%;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+#MonCV #image{
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 675px;
+    width: 200px;
+    height:200px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bgMonCV{
+    position: absolute;
+    z-index: 0;
+    top: 220px;
+    left: 335px;
+    width: 900px;
+    height:400px;
+    border: 4px solid #fff;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    padding: 80px;
+}
+
+.bgMonCV p{
+    margin-left: 15px;
+    color: #34495e;
+}
+.bgMonCV #div2{
+    position: absolute;
+    top: 80px;
+    left: 530px;
+}
+.bgMonCV h5{
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+#Contact{
+    position: relative;
+    widows: 100%;
+    height: 300px;
+    background-color: #343a40;
+}
+.top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background-color: #343a40;
+    color: white;
+    font-size: 20px;
+    
+}
+.social-icons{
+    position: absolute;
+    top :200px;
+}
+.social-icons img{
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.social-icons a:hover {
+    color: #2c3e50;
+    font-size: 115%;
+    border-bottom: 2px solid white;
+}
+#Contact .copyright{
+    position: absolute;
+    top :230px;
+    left: 80px;
+    color: white;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
