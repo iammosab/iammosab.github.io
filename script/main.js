@@ -8,15 +8,17 @@
         type:"POST",
         data:{action:"readQuotes"},
         success: function(result){
+            var table = "<table><thead><th>ID</th><th>Quote</th><th>Author</th><th>Categorie</th></thead><tbody>";
             var text = "";
             result.forEach(element => {
                 text +="<tr>";
-                text +="<td>"+element.id+"</td>";
+                text +="<th>"+element.id+"</th>";
                 text +="<td>"+element.quote+"</td>";
                 text +="<td>"+element.author+"</td>";
                 text +="<td>"+element.categorie+"</td>";
                 text +="</tr>";
             });
-            $("#tbody").html(text);
+            table+=text+ "</tbody></table>";
+            $("main").html(table);
       }});
   });
